@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Handlee&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+          padding: 25px;
+          background-image : url("pexels-邱-韬-356267.jpg");
+          color: #FFF5B8;
+          background-attachment: fixed;
+          background-size: cover;
+          font-size: 25px;
+          font-family: 'Gloria Hallelujah';
+          transition:200ms;
+        }
+        
+        .dark-mode {
+          background-image:url("pexels-min-an-813269.jpg");
+          
+          
+        }
+        table {
+            padding: 25px;
+            background-color: #00C4FF;
+            border: none;
+            border-radius: 20px;
+        }
+        .dark-table {
+            background-color: #526D82;
+        }
+        h1 {
+            color:#FFE7A0;
+            font-family: "handlee";
+        }
+        td {
+            padding:10px;
+            border: none;
+            border-radius: 10px;
+        }
+        tr {
+            border: none;
+            border-radius: 10px;
+            transition:400ms;
+        }
+        tr:hover {
+            background-color: #30A2FF;
+            padding:25px;
+
+        }
+        th {
+            padding:10px;
+            border: none;
+            border-radius: 10px;
+        }
+        #button {
+            width: 50%;
+            height:50px;
+            border-radius: 25px;
+            background-color: #006fb4;
+        }
+        </style>
+</head>
+<body class="light">
+    <h1 align="center">My Daily Routine</h1>
+    <br>
+    <table align="center">
+        <tr>
+            <th>Time</th>
+            <th>Routine</th>
+        </tr>
+        <tr>
+            <td>7:00</td>
+            <td>Wake up !</td>
+        </tr>
+        <tr>
+            <td>7:30</td>
+            <td>Breakfast</td>
+        </tr>
+        <tr>
+            <td>8:00</td>
+            <td>Classes</td>
+        </tr>
+        <tr>
+            <td>13:00</td>
+            <td>Lunch</td>
+        </tr>
+        <tr>
+            <td>14:00</td>
+            <td>More classes !!</td>
+        </tr>
+        <tr>
+            <td>18:00</td>
+            <td>Gym time</td>
+        </tr>
+        <tr>
+            <td>20:00</td>
+            <td>Dinner</td>
+        </tr>
+        <tr>
+            <td>22:00</td>
+            <td>Study time</td>
+        </tr>
+        <tr>
+            <td>00:00</td>
+            <td>Bedtime</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <center><div id="button" onclick="myFunction()" onclick="mytable()">Toggle dark mode</div></center>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+function mytable() {
+    var element = document.table;
+    element.classList.toggle("dark-table");
+}
+</script>
+</body>
+</html>
